@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54C438B92C19CEB700AC43AD /* mockolingo_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C438B82C19CEB700AC43AD /* mockolingo_appApp.swift */; };
+		54C438BD2C19CEBA00AC43AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54C438BC2C19CEBA00AC43AD /* Assets.xcassets */; };
+		54C438C02C19CEBA00AC43AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54C438BF2C19CEBA00AC43AD /* Preview Assets.xcassets */; };
+		54C438CA2C19CEBA00AC43AD /* mockolingo_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C438C92C19CEBA00AC43AD /* mockolingo_appTests.swift */; };
+		54C438D42C19CEBA00AC43AD /* mockolingo_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C438D32C19CEBA00AC43AD /* mockolingo_appUITests.swift */; };
+		54C438D62C19CEBA00AC43AD /* mockolingo_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C438D52C19CEBA00AC43AD /* mockolingo_appUITestsLaunchTests.swift */; };
+		54C438E32C19D30E00AC43AD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C438E22C19D30E00AC43AD /* NetworkManager.swift */; };
+		54C438E52C19D3F800AC43AD /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C438E42C19D3F800AC43AD /* TokenManager.swift */; };
+		54C438E72C19D86200AC43AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C438E62C19D86200AC43AD /* ViewController.swift */; };
+		54C438E92C19DA6000AC43AD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C438E82C19DA6000AC43AD /* LoginView.swift */; };
+		54C438EB2C19E41600AC43AD /* CoursesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C438EA2C19E41600AC43AD /* CoursesListView.swift */; };
+		54C438ED2C19E43600AC43AD /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C438EC2C19E43600AC43AD /* Course.swift */; };
+		54C438EF2C1A0CFD00AC43AD /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C438EE2C1A0CFD00AC43AD /* Question.swift */; };
+		54C438F12C1A0D9700AC43AD /* CourseDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C438F02C1A0D9700AC43AD /* CourseDetailViewModel.swift */; };
+		54C438F32C1A234600AC43AD /* TestResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C438F22C1A234600AC43AD /* TestResultView.swift */; };
+		54C438F52C1A236200AC43AD /* TestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C438F42C1A236200AC43AD /* TestResult.swift */; };
+		54C438F72C1A239B00AC43AD /* TestResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C438F62C1A239B00AC43AD /* TestResultViewModel.swift */; };
+		54C438F92C1A4D1B00AC43AD /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C438F82C1A4D1B00AC43AD /* HistoryView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54C438C62C19CEBA00AC43AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C438AD2C19CEB700AC43AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54C438B42C19CEB700AC43AD;
+			remoteInfo = "mockolingo-app";
+		};
+		54C438D02C19CEBA00AC43AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C438AD2C19CEB700AC43AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54C438B42C19CEB700AC43AD;
+			remoteInfo = "mockolingo-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54C438B52C19CEB700AC43AD /* mockolingo-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mockolingo-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54C438B82C19CEB700AC43AD /* mockolingo_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mockolingo_appApp.swift; sourceTree = "<group>"; };
+		54C438BC2C19CEBA00AC43AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54C438BF2C19CEBA00AC43AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		54C438C52C19CEBA00AC43AD /* mockolingo-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mockolingo-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54C438C92C19CEBA00AC43AD /* mockolingo_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mockolingo_appTests.swift; sourceTree = "<group>"; };
+		54C438CF2C19CEBA00AC43AD /* mockolingo-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mockolingo-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54C438D32C19CEBA00AC43AD /* mockolingo_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mockolingo_appUITests.swift; sourceTree = "<group>"; };
+		54C438D52C19CEBA00AC43AD /* mockolingo_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mockolingo_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		54C438E22C19D30E00AC43AD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		54C438E42C19D3F800AC43AD /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		54C438E62C19D86200AC43AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		54C438E82C19DA6000AC43AD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		54C438EA2C19E41600AC43AD /* CoursesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesListView.swift; sourceTree = "<group>"; };
+		54C438EC2C19E43600AC43AD /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		54C438EE2C1A0CFD00AC43AD /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		54C438F02C1A0D9700AC43AD /* CourseDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailViewModel.swift; sourceTree = "<group>"; };
+		54C438F22C1A234600AC43AD /* TestResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultView.swift; sourceTree = "<group>"; };
+		54C438F42C1A236200AC43AD /* TestResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResult.swift; sourceTree = "<group>"; };
+		54C438F62C1A239B00AC43AD /* TestResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultViewModel.swift; sourceTree = "<group>"; };
+		54C438F82C1A4D1B00AC43AD /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54C438B22C19CEB700AC43AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54C438C22C19CEBA00AC43AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54C438CC2C19CEBA00AC43AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54C438AC2C19CEB700AC43AD = {
+			isa = PBXGroup;
+			children = (
+				54C438B72C19CEB700AC43AD /* mockolingo-app */,
+				54C438C82C19CEBA00AC43AD /* mockolingo-appTests */,
+				54C438D22C19CEBA00AC43AD /* mockolingo-appUITests */,
+				54C438B62C19CEB700AC43AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54C438B62C19CEB700AC43AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54C438B52C19CEB700AC43AD /* mockolingo-app.app */,
+				54C438C52C19CEBA00AC43AD /* mockolingo-appTests.xctest */,
+				54C438CF2C19CEBA00AC43AD /* mockolingo-appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54C438B72C19CEB700AC43AD /* mockolingo-app */ = {
+			isa = PBXGroup;
+			children = (
+				54D780B12C65472500780142 /* Util */,
+				54D780B02C65471100780142 /* Model */,
+				54D780AF2C6546D500780142 /* View */,
+				54C438B82C19CEB700AC43AD /* mockolingo_appApp.swift */,
+				54C438BC2C19CEBA00AC43AD /* Assets.xcassets */,
+				54C438BE2C19CEBA00AC43AD /* Preview Content */,
+				54C438E62C19D86200AC43AD /* ViewController.swift */,
+				54C438F02C1A0D9700AC43AD /* CourseDetailViewModel.swift */,
+				54C438F62C1A239B00AC43AD /* TestResultViewModel.swift */,
+			);
+			path = "mockolingo-app";
+			sourceTree = "<group>";
+		};
+		54C438BE2C19CEBA00AC43AD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				54C438BF2C19CEBA00AC43AD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		54C438C82C19CEBA00AC43AD /* mockolingo-appTests */ = {
+			isa = PBXGroup;
+			children = (
+				54C438C92C19CEBA00AC43AD /* mockolingo_appTests.swift */,
+			);
+			path = "mockolingo-appTests";
+			sourceTree = "<group>";
+		};
+		54C438D22C19CEBA00AC43AD /* mockolingo-appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				54C438D32C19CEBA00AC43AD /* mockolingo_appUITests.swift */,
+				54C438D52C19CEBA00AC43AD /* mockolingo_appUITestsLaunchTests.swift */,
+			);
+			path = "mockolingo-appUITests";
+			sourceTree = "<group>";
+		};
+		54D780AF2C6546D500780142 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54C438EA2C19E41600AC43AD /* CoursesListView.swift */,
+				54C438F22C1A234600AC43AD /* TestResultView.swift */,
+				54C438E82C19DA6000AC43AD /* LoginView.swift */,
+				54C438F82C1A4D1B00AC43AD /* HistoryView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54D780B02C65471100780142 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54C438F42C1A236200AC43AD /* TestResult.swift */,
+				54C438EE2C1A0CFD00AC43AD /* Question.swift */,
+				54C438EC2C19E43600AC43AD /* Course.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54D780B12C65472500780142 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				54C438E22C19D30E00AC43AD /* NetworkManager.swift */,
+				54C438E42C19D3F800AC43AD /* TokenManager.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54C438B42C19CEB700AC43AD /* mockolingo-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54C438D92C19CEBA00AC43AD /* Build configuration list for PBXNativeTarget "mockolingo-app" */;
+			buildPhases = (
+				54C438B12C19CEB700AC43AD /* Sources */,
+				54C438B22C19CEB700AC43AD /* Frameworks */,
+				54C438B32C19CEB700AC43AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mockolingo-app";
+			productName = "mockolingo-app";
+			productReference = 54C438B52C19CEB700AC43AD /* mockolingo-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54C438C42C19CEBA00AC43AD /* mockolingo-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54C438DC2C19CEBA00AC43AD /* Build configuration list for PBXNativeTarget "mockolingo-appTests" */;
+			buildPhases = (
+				54C438C12C19CEBA00AC43AD /* Sources */,
+				54C438C22C19CEBA00AC43AD /* Frameworks */,
+				54C438C32C19CEBA00AC43AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54C438C72C19CEBA00AC43AD /* PBXTargetDependency */,
+			);
+			name = "mockolingo-appTests";
+			productName = "mockolingo-appTests";
+			productReference = 54C438C52C19CEBA00AC43AD /* mockolingo-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		54C438CE2C19CEBA00AC43AD /* mockolingo-appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54C438DF2C19CEBA00AC43AD /* Build configuration list for PBXNativeTarget "mockolingo-appUITests" */;
+			buildPhases = (
+				54C438CB2C19CEBA00AC43AD /* Sources */,
+				54C438CC2C19CEBA00AC43AD /* Frameworks */,
+				54C438CD2C19CEBA00AC43AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54C438D12C19CEBA00AC43AD /* PBXTargetDependency */,
+			);
+			name = "mockolingo-appUITests";
+			productName = "mockolingo-appUITests";
+			productReference = 54C438CF2C19CEBA00AC43AD /* mockolingo-appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54C438AD2C19CEB700AC43AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					54C438B42C19CEB700AC43AD = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					54C438C42C19CEBA00AC43AD = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 54C438B42C19CEB700AC43AD;
+					};
+					54C438CE2C19CEBA00AC43AD = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 54C438B42C19CEB700AC43AD;
+					};
+				};
+			};
+			buildConfigurationList = 54C438B02C19CEB700AC43AD /* Build configuration list for PBXProject "mockolingo-app" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54C438AC2C19CEB700AC43AD;
+			productRefGroup = 54C438B62C19CEB700AC43AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54C438B42C19CEB700AC43AD /* mockolingo-app */,
+				54C438C42C19CEBA00AC43AD /* mockolingo-appTests */,
+				54C438CE2C19CEBA00AC43AD /* mockolingo-appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54C438B32C19CEB700AC43AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C438C02C19CEBA00AC43AD /* Preview Assets.xcassets in Resources */,
+				54C438BD2C19CEBA00AC43AD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54C438C32C19CEBA00AC43AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54C438CD2C19CEBA00AC43AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54C438B12C19CEB700AC43AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C438ED2C19E43600AC43AD /* Course.swift in Sources */,
+				54C438E92C19DA6000AC43AD /* LoginView.swift in Sources */,
+				54C438E72C19D86200AC43AD /* ViewController.swift in Sources */,
+				54C438EF2C1A0CFD00AC43AD /* Question.swift in Sources */,
+				54C438E32C19D30E00AC43AD /* NetworkManager.swift in Sources */,
+				54C438EB2C19E41600AC43AD /* CoursesListView.swift in Sources */,
+				54C438F72C1A239B00AC43AD /* TestResultViewModel.swift in Sources */,
+				54C438F92C1A4D1B00AC43AD /* HistoryView.swift in Sources */,
+				54C438F52C1A236200AC43AD /* TestResult.swift in Sources */,
+				54C438E52C19D3F800AC43AD /* TokenManager.swift in Sources */,
+				54C438F12C1A0D9700AC43AD /* CourseDetailViewModel.swift in Sources */,
+				54C438B92C19CEB700AC43AD /* mockolingo_appApp.swift in Sources */,
+				54C438F32C1A234600AC43AD /* TestResultView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54C438C12C19CEBA00AC43AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C438CA2C19CEBA00AC43AD /* mockolingo_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54C438CB2C19CEBA00AC43AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C438D62C19CEBA00AC43AD /* mockolingo_appUITestsLaunchTests.swift in Sources */,
+				54C438D42C19CEBA00AC43AD /* mockolingo_appUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54C438C72C19CEBA00AC43AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54C438B42C19CEB700AC43AD /* mockolingo-app */;
+			targetProxy = 54C438C62C19CEBA00AC43AD /* PBXContainerItemProxy */;
+		};
+		54C438D12C19CEBA00AC43AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54C438B42C19CEB700AC43AD /* mockolingo-app */;
+			targetProxy = 54C438D02C19CEBA00AC43AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		54C438D72C19CEBA00AC43AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		54C438D82C19CEBA00AC43AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54C438DA2C19CEBA00AC43AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"mockolingo-app/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "siuda.mockolingo-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54C438DB2C19CEBA00AC43AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"mockolingo-app/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "siuda.mockolingo-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		54C438DD2C19CEBA00AC43AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "siuda.mockolingo-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mockolingo-app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mockolingo-app";
+			};
+			name = Debug;
+		};
+		54C438DE2C19CEBA00AC43AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "siuda.mockolingo-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mockolingo-app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mockolingo-app";
+			};
+			name = Release;
+		};
+		54C438E02C19CEBA00AC43AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "siuda.mockolingo-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "mockolingo-app";
+			};
+			name = Debug;
+		};
+		54C438E12C19CEBA00AC43AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "siuda.mockolingo-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "mockolingo-app";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54C438B02C19CEB700AC43AD /* Build configuration list for PBXProject "mockolingo-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54C438D72C19CEBA00AC43AD /* Debug */,
+				54C438D82C19CEBA00AC43AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54C438D92C19CEBA00AC43AD /* Build configuration list for PBXNativeTarget "mockolingo-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54C438DA2C19CEBA00AC43AD /* Debug */,
+				54C438DB2C19CEBA00AC43AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54C438DC2C19CEBA00AC43AD /* Build configuration list for PBXNativeTarget "mockolingo-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54C438DD2C19CEBA00AC43AD /* Debug */,
+				54C438DE2C19CEBA00AC43AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54C438DF2C19CEBA00AC43AD /* Build configuration list for PBXNativeTarget "mockolingo-appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54C438E02C19CEBA00AC43AD /* Debug */,
+				54C438E12C19CEBA00AC43AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54C438AD2C19CEB700AC43AD /* Project object */;
+}
